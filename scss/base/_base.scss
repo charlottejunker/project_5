@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $bg-color;
+  @extend %zero;
+  text-align: center;
+}
+
+h1 {
+  color: $heading-color;
+}
+
+ul {
+  @extend %zero;
+}
+
+li {
+  list-style: none;
+}

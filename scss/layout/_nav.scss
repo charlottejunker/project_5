@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    @include headings;
+    margin-top: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    width: 90%;
+  }
+}

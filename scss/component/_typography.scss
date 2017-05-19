@@ -1,0 +1,17 @@
+body {
+  font-family: $font;
+  color: $font-color;
+}
+
+a {
+  text-decoration: none;
+
+  &:link, &:visited {
+    color: $font-color;
+  }
+
+  &:hover {
+    color: $contrast-color;
+  }
+
+}
