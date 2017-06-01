@@ -1,7 +1,26 @@
-.nav {
-  display: flex;
-  flex-direction: column;
+header {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-around;
 
+    li {
+      display: flex;
+      padding-left: 60px;
+    }
+  }
+}
+
+#nav {
+  @extend %padding;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li {
+    padding-bottom: 20px;
+  }
   a {
     @include headings;
     margin-top: 5px;

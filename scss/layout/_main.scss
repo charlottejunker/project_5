@@ -1,11 +1,106 @@
-.portfolio {
-  @extend %margins;
+#profile {
+  background-color: $contrast-color;
+  @extend %padding;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
-.skills {
+
+/* portfolio section*/
+
+
+#portfolio {
+  @extend %padding;
   @extend %margins;
+
+  #container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .portfolio {
+    @extend %padding;
+    @media screen and (min-width: 768px) {
+      width: 45%;
+      margin: 2.5%;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 28.33%;
+    }
+    @media screen and (min-width: 1281px) {
+      width: 20%;
+    }
+  }
+
 }
 
-.contact {
+
+
+/* skills section*/
+
+
+#skills {
+  background-color: $contrast-color;
+  @extend %padding;
+}
+
+.badges {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    min-height: 60px;
+    font-size: .8em;
+    padding-left: 60px;
+    padding-top: 10px;
+    text-align: left;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 0;
+      width: 25%;
+      margin: 4%;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 15%;
+      margin: 2.5%;
+    }
+  }
+}
+
+
+@for $i from 1 through 5 {
+  .badge-#{$i} {
+    background-image: url(#{$badge-path}/badge-#{$i}.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+  }
+}
+
+/* contact section*/
+
+#contact {
   @extend %margins;
+  @extend %padding;
+  border-bottom: solid 1px $contrast-color;
+  p {
+    @extend %padding;
+  }
+
+  li {
+    padding-bottom: 20px;
+    a {
+      padding-left: 40px;
+    }
+  }
 }

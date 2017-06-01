@@ -64,12 +64,12 @@ li {
 
 /* home section */
 
-.profile-card {
-  background-color: #9ca9c9;
+/*.profile-card {
+  background-color: $contrast-color;
   padding: 1em;
-}
+}*/
 
-.profile {
+/*.profile {
   margin: 0;
   padding: 1em;
   font-size: 1.1em;
@@ -80,31 +80,26 @@ li {
   width: 50%;
   max-width: 250px;
   padding: 1em 0;
-}
+}*/
 
 /* portfolio section*/
-
+/*
 .portfolio {
   padding: 2.5em 0 0;
 }
 
 .portfolio p {
   padding: 0 0 2em;
-}
+}*/
 
-.subheading {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1em;
-  padding-bottom: 1em;
-}
+
 
 /* skills section */
 
-.skills {
-  background-color: #9ca9c9;
+/*.skills {
+  background-color: $contrast-color;
   padding: 2.5em 0;
-}
+}*/
 
 .wrapper {
   width: 90%;
@@ -121,7 +116,7 @@ li {
   text-align: left;
 }
 
-.badges li {
+/*.badges li {
   display: block;
   min-height: 40px;
   background-repeat: no-repeat;
@@ -129,9 +124,9 @@ li {
   padding: 0 0 0 70px;
   margin: 20px 0 0;
   font-size: .8em;
-}
+}*/
 
-.badges li.badge-1 {
+/*.badges li.badge-1 {
   background-image: url('../img/artdirection_badge.png');
 }
 
@@ -149,13 +144,13 @@ li {
 
 .badges li.badge-5 {
   background-image: url('../img/float_badge.png');
-}
+}*/
 
 /* contact */
 
 .contact {
   padding: 2.5em 0;
-  border-bottom: solid 1px #9ca9c9;
+  /*border-bottom: solid 1px #9ca9c9;*/
   font-size: 1.1em;
 }
 

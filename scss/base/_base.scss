@@ -6,6 +6,8 @@ body {
   background: $bg-color;
   @extend %zero;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -18,4 +20,8 @@ ul {
 
 li {
   list-style: none;
+}
+
+.wrapper {
+  @extend %margins;
 }
