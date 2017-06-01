@@ -1,4 +1,27 @@
 #footer {
   @extend %margins;
   @extend %padding;
+  display: flex;
+  justify-content: space-between;
+  p {
+    margin: 0;
+  }
 }
+
+#mobile-footer {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+
+ #tablet-desktop-footer {
+   display: none;
+   li {
+     padding-left: 20px;
+   }
+   @media screen and (min-width: 768px) {
+     display: flex;
+     justify-content: space-between;
+   }
+ }

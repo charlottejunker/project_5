@@ -495,6 +495,25 @@ li {
     #contact li a {
       padding-left: 40px; }
 
+#footer {
+  display: flex;
+  justify-content: space-between; }
+  #footer p {
+    margin: 0; }
+
+@media screen and (min-width: 768px) {
+  #mobile-footer {
+    display: none; } }
+
+#tablet-desktop-footer {
+  display: none; }
+  #tablet-desktop-footer li {
+    padding-left: 20px; }
+  @media screen and (min-width: 768px) {
+    #tablet-desktop-footer {
+      display: flex;
+      justify-content: space-between; } }
+
 body {
   font-family: "Noto Sans", sans-serif;
   color: #242d42; }
@@ -515,7 +534,7 @@ a {
 footer p {
   font-weight: 700; }
 
-.mobile-footer {
+#mobile-footer, #tablet-desktop-footer {
   font-size: 1em;
   text-transform: uppercase;
   font-weight: 700;

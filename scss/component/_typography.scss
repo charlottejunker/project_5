@@ -24,6 +24,6 @@ footer p {
   font-weight: 700;
 }
 
-.mobile-footer {
+#mobile-footer, #tablet-desktop-footer {
   @include headings;
 }
