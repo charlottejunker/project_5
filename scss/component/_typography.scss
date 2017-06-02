@@ -20,10 +20,12 @@ a {
   @include headings;
 }
 
-footer p {
-  font-weight: 700;
-}
-
-#mobile-footer, #tablet-desktop-footer {
-  @include headings;
+footer {
+  font-size: .8em;
+  p {
+    font-weight: 700;
+  }
+  #mobile-footer, #tablet-desktop-footer {
+    @include headings;
+  }
 }

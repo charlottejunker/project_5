@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @media screen and (min-width: 768px) {
+    @media #{$tablet-bp} {
       flex-direction: row-reverse;
     }
   }
@@ -21,7 +21,7 @@
   @extend %margins;
 
   #container {
-    @media screen and (min-width: 768px) {
+    @media #{$tablet-bp} {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -30,14 +30,14 @@
 
   .portfolio {
     @extend %padding;
-    @media screen and (min-width: 768px) {
+    @media #{$tablet-bp} {
       width: 45%;
       margin: 2.5%;
     }
-    @media screen and (min-width: 1024px) {
+    @media #{$desktop-bp} {
       width: 28.33%;
     }
-    @media screen and (min-width: 1281px) {
+    @media #{$large-desktop-bp} {
       width: 20%;
     }
   }
@@ -52,10 +52,13 @@
 #skills {
   background-color: $contrast-color;
   @extend %padding;
+  p {
+    @extend %padding;
+  }
 }
 
 .badges {
-  @media screen and (min-width: 768px) {
+  @media #{$tablet-bp} {
     display: flex;
     flex-wrap: wrap;
   }
@@ -66,12 +69,12 @@
     padding-top: 10px;
     text-align: left;
 
-    @media screen and (min-width: 768px) {
+    @media #{$tablet-bp} {
       padding-top: 0;
       width: 25%;
       margin: 4%;
     }
-    @media screen and (min-width: 1024px) {
+    @media #{$desktop-bp} {
       width: 15%;
       margin: 2.5%;
     }

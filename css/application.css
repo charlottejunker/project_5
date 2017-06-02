@@ -364,11 +364,11 @@ textarea {
   width: 90%;
   margin: 0 auto; }
 
-body, ul {
+body, ul, #footer p {
   margin: 0;
   padding: 0; }
 
-#nav, #profile, #portfolio, #portfolio .portfolio, #skills, #contact, #contact p, #footer {
+#nav, #profile, #portfolio, #portfolio .portfolio, #skills, #skills p, #contact, #contact p, #footer {
   padding: 20px 0; }
 
 * {
@@ -498,8 +498,6 @@ li {
 #footer {
   display: flex;
   justify-content: space-between; }
-  #footer p {
-    margin: 0; }
 
 @media screen and (min-width: 768px) {
   #mobile-footer {
@@ -507,12 +505,11 @@ li {
 
 #tablet-desktop-footer {
   display: none; }
-  #tablet-desktop-footer li {
-    padding-left: 20px; }
   @media screen and (min-width: 768px) {
     #tablet-desktop-footer {
-      display: flex;
-      justify-content: space-between; } }
+      display: flex; }
+      #tablet-desktop-footer li {
+        padding-left: 30px; } }
 
 body {
   font-family: "Noto Sans", sans-serif;
@@ -531,14 +528,15 @@ a {
   font-weight: 700;
   color: #374362; }
 
-footer p {
-  font-weight: 700; }
-
-#mobile-footer, #tablet-desktop-footer {
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #374362; }
+footer {
+  font-size: .8em; }
+  footer p {
+    font-weight: 700; }
+  footer #mobile-footer, footer #tablet-desktop-footer {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #374362; }
 
 img {
   width: 100%; }

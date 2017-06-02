@@ -1,5 +1,5 @@
 header {
-  @media screen and (min-width: 1024px) {
+  @media #{$desktop-bp} {
     display: flex;
     justify-content: space-around;
 
@@ -13,7 +13,7 @@ header {
 #nav {
   @extend %padding;
 
-  @media screen and (min-width: 768px) {
+  @media #{$tablet-bp} {
     display: flex;
     justify-content: space-around;
   }
