@@ -364,11 +364,11 @@ textarea {
   width: 90%;
   margin: 0 auto; }
 
-body, ul, #footer p {
+body, ul, #profile p, #footer p {
   margin: 0;
   padding: 0; }
 
-#nav, #profile, #portfolio, #portfolio .portfolio, #skills, #skills p, #contact, #contact p, #footer {
+#nav, #profile, #profile .wrapper > *, #portfolio, #portfolio .portfolio, #skills, #skills p, #contact, #contact p, #footer {
   padding: 20px 0; }
 
 * {
@@ -549,7 +549,6 @@ img {
       padding-left: 40px; } }
   .profile-photo img {
     border-radius: 100%;
-    padding: 1em 0;
     align-items: center; }
     @media screen and (min-width: 768px) {
       .profile-photo img {
