@@ -401,10 +401,6 @@ li {
 #nav li {
   padding-bottom: 20px; }
 #nav a {
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #374362;
   margin-top: 5px;
   padding: 10px 15px;
   text-decoration: none;
@@ -522,21 +518,26 @@ a {
   a:hover {
     color: #9ca9c9; }
 
-.subheading {
+#nav a {
   font-size: 1em;
-  text-transform: uppercase;
   font-weight: 700;
-  color: #374362; }
+  color: #374362;
+  text-transform: uppercase; }
 
-footer {
-  font-size: .8em; }
-  footer p {
-    font-weight: 700; }
-  footer #mobile-footer, footer #tablet-desktop-footer {
-    font-size: 1em;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #374362; }
+.subheading {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #374362;
+  text-transform: uppercase; }
+
+footer p {
+  font-weight: 700;
+  font-size: 0.9em; }
+footer #mobile-footer, footer #tablet-desktop-footer {
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #374362;
+  text-transform: uppercase; }
 
 img {
   width: 100%; }

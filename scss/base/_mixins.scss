@@ -1,6 +1,7 @@
-@mixin headings {
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: darken($heading-color, 20%);
+@mixin headings ($font-size: 1em, $font-weight: 700, $color: darken($heading-color, 20%), $text-transform: uppercase) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+  text-transform: $text-transform;
 }
+// darken($heading-color, 20%)

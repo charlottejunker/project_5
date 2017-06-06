@@ -16,16 +16,20 @@ a {
 
 }
 
+#nav a {
+  @include headings ();
+}
+
 .subheading {
-  @include headings;
+  @include headings (1.1em);
 }
 
 footer {
-  font-size: .8em;
   p {
     font-weight: 700;
+    font-size: 0.9em;
   }
   #mobile-footer, #tablet-desktop-footer {
-    @include headings;
+    @include headings (0.8em);
   }
 }
